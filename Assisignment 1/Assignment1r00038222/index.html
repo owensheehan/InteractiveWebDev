@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--r00038222-->
+<HTML>
+	<HEAD>
+		<TITLE>Custom Mugs</TITLE>
+		
+		<LINK rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width" />
+		<meta charset="UTF-8">
+	</HEAD>
+	<BODY>
+		<HEADER>
+			<H1>Custom Mugs</H1>
+		</HEADER>
+			<main>
+					<section class="box1">
+						<SECTION class="innersection">
+							<img src="images/blue.jpg" class="responsiveimage" alt="Mug" id="pic"/>
+						</SECTION>
+					</section>
+					
+					
+					<section class="box">
+						
+						<section class="innersection" id="round">
+							<form name="myForm" id="form1" action="http://atlantis.cit.ie/displayvalues.php" value="submit" method="get">
+								<h3>Personalise your Mug</h3>
+								What size mug would you like? <select id="mug_size" name="size">
+									<option value="Small">Small	&euro;9.99</option>
+									<option value="Medium">Medium	&euro;12.99</option>
+									<option value="Large">Large		&euro;14.99</option>
+									<option value="Xtra_Large">Xtra-Large	&euro;15.99</option>
+								</select><br/>
+								
+
+								What Colour mug would you like? <select id="color" name="color">
+									<option value="Blue">Blue</option>
+									<option value="Red">Red</option>
+									<option value="Green">Green</option>
+									<option value="Yellow">Yellow</option>
+									<option value="Purple">Purple</option>
+								</select>
+							
+								<fieldset>
+									<div id="upgrades">
+										<h3>Upgrades</h3>
+										<input type="checkbox" name="TransparentBase" Value="yes" id="u1">Transparnet Base	&euro;3<br/>
+										<input type="checkbox" name="Thermos" Value="yes" id="u2" >Thermos	&euro;7<br/>
+										<input type="checkbox" name="Logo" Value="yes" id="u3">Upload your Logo	&euro;6<br/>
+										<input type="checkbox" name="Engrave" Value="yes" id="u4">Engraved Initials	&euro;2<br/><br/>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div id="addons">
+										<h3>Add-ons</h3>
+										<input type="checkbox" name="Hotplate" Value="yes" id="a1">Hot plate for your Mug	&euro;15<br/>
+										<input type="checkbox" name="Lid" Value="yes" id="a2">Mug Lid	&euro;3<br/>
+										<input type="checkbox" name="pullcord" Value="yes" id="a3">Mug Pull Cord	&euro;6<br/><br/>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div id="extras">
+										<h3>Extras</h3>
+										<input type="checkbox" name="coffee" Value="yes" id="e1">1kg of Coffee	&euro;15<br/>
+										<input type="checkbox" name="conmilk" Value="yes" id="e2">Condensed Milk	&euro;3<br/>
+										<input type="checkbox" name="tea" Value="yes" id="e3">1000 Tea Bags	&euro;6<br/><br/>
+									</div>
+								</fieldset>
+								
+						</form>		
+					</section>
+				</section>	
+					
+							<section class="box2">
+								<section class="innersection" id="round2">
+									<p id="total">Total Cost is &euro;0.00</p>
+									<button type="button" id="calculate"><img src="images/calculate.png" alt="Calculate"><br/><strong>Recalculate Total</strong></button>
+									<button type="button" id="Order"><img src="images/order.png" alt="Order"><br/><strong>Order Now</strong></button>
+								</section>
+							</section>
+							
+			<script type="text/javascript" src="js/script.js" >
+			</script>
+		</main>
+	</BODY>
+</HTML>

@@ -1,0 +1,134 @@
+main 
+{
+	display : flex;
+	width : 60%;
+	margin-left : auto;
+	margin-right : auto;
+	flex-flow : row wrap;
+	font-family : mons;
+	
+}
+html
+{
+	min-height : 100%;
+	background : white;
+	color : rgb(64, 64, 64);
+}
+header h1
+{
+	font-family : mons;
+	font-size : 60px;
+	text-align : center;
+	
+}
+main h3
+{
+	font-family : mons;
+	font-size : 25px;
+	text-align : center;
+	margin-top : 5px;
+	margin-bottom: 5px;
+}	
+main section
+{
+	min-height : 150px;
+	min-width : 150px;
+}
+section.innersection
+{
+	margin : 10px;
+	box-shadow : 2px 3px 3px 2px rgb(102, 102, 102);
+	border-color : #666666;
+	border-width : 1px;
+	border-style : solid;
+	transition-duration : 2s;
+	-webkit-transition-duration : 2s;
+	height : auto;
+	width : auto;
+	background-color : rgb(242, 242, 242);
+	padding-bottom : 15px;
+}
+#round, #round2
+{
+	border-radius : 25px;
+}
+.responsiveimage
+{
+	max-width : 100%;
+	height : auto;
+	margin : auto;
+}
+.forms
+{
+	display : flex;
+	flex-flow : row wrap;
+}
+.box
+{
+	flex-basis : 50%;
+}
+#mug_size
+{
+	width : auto;
+	margin : auto;
+}
+.box1
+{
+	text-align : center;
+	flex-basis : 50%;
+}
+.box2
+{
+	flex-basis : 100%;
+	text-align : center;
+}
+@media (max-width : 800px)
+{
+	main
+	{
+		width : 80%;
+	}
+	.box
+	{
+		flex-basis : 100%;
+	}
+	.box1
+	{
+		flex-basis : 100%;
+	}
+	.box2
+	{
+		flex-basis : 100%;
+	}
+	
+}
+@media (max-width : 600px)
+{
+	main
+	{
+		width : 80%;
+	}
+	.box
+	{
+		flex-basis : 100%;
+	}
+	.box1
+	{
+		flex-basis : 100%;
+	}
+	.box2
+	{
+		flex-basis : 100%;
+	}
+	
+}
+@font-face
+{
+	font-family : mons;
+	src: url('fonts/Montserrat-Regular.ttf')
+}
+@font-face
+{
+	font-family : monsb;
+	src: url('fonts/Montserrat-Bold.ttf')
+}

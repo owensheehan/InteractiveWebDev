@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--R000328222-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<LINK rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width" />
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1>PizzaShack</h2>
+		</header>
+		
+		<main>
+			<section class="banner">
+				
+					<section class="buildtop">
+						<h3>Build your own Pizza</h3>
+					</section>
+				
+			</section>	
+			
+				<form name="myForm" id="form1" action="http://atlantis.cit.ie/displayvalues.php" value="submit" method="get">
+						<section id="greenOuter">
+							<section class="steps" id="greenstep">
+							
+							<section id="selectBase"
+								<h5>Step I</h5>
+								<p>Choose what size</p>
+								<p>& base.</p>
+								<table id="base">
+									<tr>
+										<th>7"</th>
+										<th>9"</th>
+										<th>12"</th>
+										<th>16"</th>
+										<th>22"</th>
+									</tr>
+									<tr>
+										<th>Personal</th>
+										<th>Small</th>
+										<th>Medium</th>
+										<th>Large</th>
+										<th>XL</th>
+									</tr>
+									<tr>
+										<td class="base"><input type="radio" name="BaseSize" Value="7" id="personal"></td>
+										<td class="base"><input type="radio" name="BaseSize" Value="9" id="small"></td>
+										<td class="base"><input type="radio" name="BaseSize" Value="12" id="medium" checked></td>
+										<td class="base"><input type="radio" name="BaseSize" Value="16" id="large"></td>
+										<td class="base"><input type="radio" name="BaseSize" Value="22" id="XtraLarge"></td>
+									</tr>
+									
+									<tr>
+										<th></th>
+										<th>Thin</th>
+										<th>Thick</th>
+										<th>Stuffed</th>
+									</tr>
+									<tr>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th>Cheese</th>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="base"><input type="radio" name="BaseType" Value="Thin" id="thin"></td>
+										<td class="base"><input type="radio" name="BaseType" Value="Thick" id="thick" checked></td>
+										<td class="base"><input type="radio" name="BaseType" Value="Stuffed" id="stuffed"></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>add &euro;2.50</td>
+									</tr>
+								</table>	
+								</section>
+								<section class="imageContainer">
+								<section>
+									<img id="layer1" src="images/baseSauce.png")>
+									<img class="hidden" id="cheeseLayer" src="images/cheese.png") alt="cheese">
+									<img class="hidden" id="mushroomLayer" src="images/oneMushroom.png" alt="mushroom">
+									<img class="hidden" id="baconLayer" src="images/bacon.png" alt="bacon">
+									<img class="hidden" id="onionLayer" src="images/onion.png" alt="onion">
+									<img class="hidden" id="hamLayer" src="images/ham.png" alt="ham">
+									<img class="hidden" id="chickenLayer" src="images/chicken.png" alt="chicken">
+									<img class="hidden" id="jalepenosLayer" src="images/jalepenos.png" alt="jalepenos">
+									<img class="hidden" id="pepperoniLayer" src="images/pepperoni.png" alt="pepperoni">
+								</section>
+							</section>
+							</section>
+							
+						</section>
+						
+						<section id="whiteOuter">
+							<section class="steps" id="whitestep">
+								<h5>Step II</h5>
+								<p>Select Toppings</p>
+								
+								<table id="toppingsTable">
+									<tr>
+										<th>Topping</th>
+										<th>Yes</th>
+										<th>Extra</th>
+										<th>Toppings</th>
+										<th>Yes</th>
+										<th>Extra</th>
+									</tr>
+									<tr>
+										<td>Ham</td>
+										<td class="topping" id="oneHam"><input type="checkbox" name="Ham" Value="Yes" id="Ham"></td>
+										<td class="hidden" id="twoHam"><input type="checkbox" name="hamAmount" Value="Double" id="DoubleHam"></td>
+										<td class="filler" id="hamFiller"></td>
+										<td>Cheese</td>
+										<td class="topping" id="oneCheese"><input type="checkbox" name="Cheese" Value="yes" id="Cheese"></td>
+										<td class="hidden" id="twoCheese"><input type="checkbox" name="CheeseAmount" Value="Double" id="DoubleCheese"></td>
+										<td class="filler" id="cheeseFiller"></td>
+									</tr>
+									<tr>
+										<td>Chicken</td>
+										<td class="topping" id="oneChicken"><input type="checkbox" name="Chicken" Value="Yes" id="Chicken"></td>
+										<td class="hidden" id="twoChicken"><input type="checkbox" name="ChickenAmount" Value="Double" id="DoubleChicken"></td>
+										<td class="filler" id="chickenFiller"></td>
+										<td>Mushroom</td>
+										<td class="topping" id="oneMushroom"><input type="checkbox" name="Mushroom" Value="Yes" id="Mushroom"></td>
+										<td class="hidden" id="twoMushroom"><input type="checkbox" name="MushroomAmount" Value="Double" id="DoubleMushroom"></td>
+										<td class="filler" id="mushroomFiller"></td>
+									</tr>
+									<tr>
+										<td>Jalepenos</td>
+										<td class="topping" id="oneJalepenos"><input type="checkbox" name="Jalepenos" Value="Yes" id="Jalepenos"></td>
+										<td class="hidden" id="twoJalepenos"><input type="checkbox" name="JalepenosAmount" Value="Double" id="DoubleJalepenos"></td>
+										<td class="filler" id="jalepenosFiller"></td>
+										<td>Onion</td>
+										<td class="topping" id="oneOnion"><input type="checkbox" name="Onion" Value="Yes" id="Onion"></td>
+										<td class="hidden" id="twoOnion"><input type="checkbox" name="OnionAmount" Value="Double" id="DoubleOnion"></td>
+										<td class="filler" id="onionFiller"></td>
+									</tr>
+									<tr>
+										<td>Bacon</td>
+										<td class="topping" id="oneBacon"><input type="checkbox" name="Bacon" Value="Yes" id="Bacon"></td>
+										<td class="hidden" id="twoBacon"><input type="checkbox" name="BaconAmount" Value="Double" id="DoubleBacon"></td>
+										<td class="filler" id="baconFiller"></td>
+										<td>Pepperoni</td>
+										<td class="topping" id="onePepperoni"><input type="checkbox" name="Pepperoni" Value="Yes" id="Pepperoni"></td>
+										<td class="hidden" id="twoPepperoni"><input type="checkbox" name="PepperoniAmount" Value="Double" id="DoublePepperoni"></td>
+										<td class="filler" id="pepperoniFiller"></td>
+									</tr>
+									
+									
+									
+								</table>
+							</section>
+						</section>
+						<section id="redOuter">
+							<section class="steps" id="redstep"
+								<h5>Step III</h5>
+								<p>Order and enjoy</p>
+								<p id="price">Your price is   &euro;0.00</p>
+								What is your Email Address?<input type="email" name="email" id="email" required>
+								 <input type="submit" id="submit" value="Order Now" />
+							</section>
+						</section>	
+				</form>
+				
+			
+			<script type="text/javascript" src="js/calculate.js" >
+			</script>
+		</main>
+	</body>
+	<footer>
+	</footer>
+</html>

@@ -1,0 +1,193 @@
+/*R00038222*/
+main 
+{
+	display : flex;
+	width : 60%;
+	margin-left : auto;
+	margin-right : auto;
+	flex-flow : row wrap;
+	font-family : pizza;
+}
+html
+{
+	min-height : 100%;
+	width : auto;
+	background-image: url("images/pizza.bmp");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color : rgb(64, 64, 64);
+}
+header h1
+{
+	font-family : pizza;
+	text-shadow: 0 0 0.2em #8F7, 0 0 0.2em #8F7;
+	font-size : 60px;
+	text-align : center;
+	
+}
+main h3
+{
+	font-family : pizza;
+	font-size : 25px;
+	margin-top : 5px;
+	margin-bottom: 5px;
+}	
+main h5
+{
+	font-family : pizza;
+	text-align : center;
+	margin-top : 5px;
+	margin-bottom: 5px;
+}
+section
+{
+	width : 100%;
+
+}	
+form
+{
+	width : 100%;
+	display : flex;
+	flex-flow : row wrap;
+}
+table
+{
+	width : 60%;
+	margin : auto;
+	font-family : Arial;
+	font-size : 16px;
+}
+.imageContainer
+{
+	position : relative;
+	height : 300px;
+	width : 100%;
+}
+img
+{
+	position : absolute;
+	left : 50%;
+	top :	50px;
+
+	margin-left : -149px;
+}
+
+
+
+
+.hidden
+{
+	display : none;
+}
+.banner
+{
+	
+	height : 150px;
+	width : 100%;
+}
+section.steps
+{
+	margin : 5px;
+	box-shadow : 2px 3px 3px 2px rgb(102, 102, 102);
+	border-color : #666666;
+	border-width : 1px;
+	border-style : solid;
+	transition-duration : 2s;
+	-webkit-transition-duration : 2s;
+	height : auto;
+	width : 100%;
+	background-color : rgb(242, 242, 242);
+	padding-bottom : 15px;
+	text-align : center;
+	opacity : 0.9;
+	font-size : 10px;
+	
+}
+.responsiveimage
+{
+	max-width : 100%;
+	height : auto;
+	margin : auto;
+}
+
+
+.buildtop
+{
+	text-align : center;
+	text-shadow: 0 0 0.2em #8F7, 0 0 0.2em #8F7, 0 0 0.2em #8F7;
+	margin : 10px;
+	height : 50px;
+	width : 100%;
+	flex-basis : 100%;
+
+}
+#greenOuter
+{
+	flex-basis : 100%;
+}
+#whiteOuter
+{
+	flex-basis : 100%;
+
+}
+#redOuter
+{
+	flex-basis : 100%;
+}
+#greenstep
+{
+	background-color : #008966;
+	display : flex;
+	flex-flow : row wrap;
+}
+#whitestep
+{
+	background-color : #eff0ef;
+	
+}
+#redstep
+{
+	background-color : #cf2b3b;
+}
+#imageContainer
+{
+	flex-basis : 50%;
+}
+
+@media (max-width : 800px)
+{
+	main
+	{
+		width : 80%;
+	}
+	#greenOuter, #whiteOuter, #redOuter
+	{
+		flex-basis : 100%;
+	}
+	table
+	{
+		font-size : 12px;
+	}
+}
+//@media (max-width : 600px)
+{
+	main
+	{
+		width : 80%;
+		display : flex;
+	}
+	.steps
+	{
+		flex-basis : 100%;
+	}
+	table
+	{
+		font-size : 12px;
+	}
+}
+@font-face
+{
+	font-family : pizza;
+	src: url('fonts/order pizza.ttf')
+}
+

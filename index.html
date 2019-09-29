@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="script4.js" >
+		
+		</script>
+	</head>
+	<body>
+		<!--Fortune teller-->
+		<div>
+			<h1>The Fortune Teller</h1>
+			<p id="fortune"></p>
+			<script>
+				var children =Math.round(Math.random()*4);
+				var partner = ['Susan','Mary','Tiny','Egit'];
+				var geoLocation = ['Cork','Dublin','Galway','Belfast'];
+				var jobTitle = ['Programer','Warehouse Operator','Movie Star','Writer'];
+				tellFortune(children,partner,geoLocation,jobTitle);
+			</script>
+		</div>
+		<!--Age Calculator-->
+		<div>
+			<h1>The Age Calculator</h1>
+			<form name="form" id="form" onkeypress="return event.keyCode != 13;">
+				What year where you born in? <input type="number" name="birthYear" id="birthYear">
+				<!--What year is it? <input type="number" name="Year">-->
+				<button type="Button" value="Submit" onclick="calculateAge()">Submit</button>
+			</form>
+			<p id="ages"></p>
+		
+		</div>
+		<!--Geometizer-->
+		<div>
+			<h1>Geometizer</h1>
+			<form name="form2" id="form2" onkeypress="return event.keycode != 13;">
+				What is the radius of the Circle?<input type="number" name="radius" id="radius">
+				<button type="Button" value="Submit" onclick="calculateCircumference()">Calculate Circumference</button>
+				<button type="Button" value="Submit" onclick="calculateArea()">Calculate Area</button>
+			</form>
+			<p id="resultCirc"></p>
+			<p id="resultArea"></p>
+		</div>
+	</body>
+	<footer>
+	
+	</footer>
+</html>
